@@ -46,3 +46,15 @@ The above line define a function named _main_. The _main_ function is special, I
 `println!("Hello, world!");`
 
 The above line prints text to the screen. Note, Rust style is to indent with four spaces and not a tab. The `println!` calls a Rust macro. if it was a function, it will be `println`. In Rust, functions and macros are different.
+
+# Hello, Cargo!
+
+Cargo is Rust's build system and package manager. It is a tool used to manage Rus projects, it helps in building our code, downloading libraries otherwise known as dependencies
+
+Starting a project using cargo enables adding dependencies to project easy.
+
+use (cargo --version) to check if cargo is installed.
+
+## Creating a project with Cargo
+
+- Step 1: run `cargo new hello_cargo`
