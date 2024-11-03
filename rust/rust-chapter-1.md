@@ -34,3 +34,11 @@ Rust files ends with the .rs extension. If a file is made up of more than a word
 
 **Step 1**: rustc main.rs
 **Step 2**: ./main
+
+## Anatomy of Rust Program
+
+`fn main() {}`
+
+The above line define a function named _main_. The _main_ function is special, It is the first code that runs in every executable Rust program.
+
+**Note**: Sticking to a standard style across Rust projects, use an automatic formatter tool caled _rustfmt_ to format to format code in a particular style
