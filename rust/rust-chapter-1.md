@@ -29,3 +29,8 @@ Rust brings contemporary developer tools to the systems programming world.
 We can open rust one page documentation from the command line using `rustup doc`
 
 Rust files ends with the .rs extension. If a file is made up of more than a word, the convention is to use an underscore to seperate them.
+
+## Compiling and Running Rust Program
+
+**Step 1**: rustc main.rs
+**Step 2**: ./main
