@@ -57,20 +57,4 @@ use (cargo --version) to check if cargo is installed.
 
 ## Creating a project with Cargo
 
-run `cargo new hello_cargo` in our terminal or command line
-
-TOML stands for `Tom Obvious, Minimal Lnaguage` which is cargo's configuration format, just like a package.json file in a JS project.
-
-In Rust, packages of code are referred to as
-
-## Building and running a Cargo Project
-
-from the project directory created via cargo, run `cargo build` - this will enable us to build or compile our rust program.
-
-Alternatively, we can compile and run our rust program using `cargo run` which is more convenient to using `cargo build`
-
-Let say, we don't want to run or compile our program. Instead want to see if it will compile without creating an executable we can use the `cargo check` command.
-
-## Building for Release
-
-When a project is ready for release, we can use `cargo build --release` to compile it with optimizations. This command will create an executable in `target/release` instead of `target/debug`
+- Step 1: run `cargo new hello_cargo`
