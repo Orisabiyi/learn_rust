@@ -55,3 +55,25 @@ rand <library name> = "0.8.5" <version number>
 ### Upadting a Crate
 
 When we want to update a crate, Cargo provides the command _update_, which will ignore the _Cargo.lock_ file and figure out all the latest versions that fit your specifications in the Cargo.toml file and write these new versions to the Cargo.lock file
+
+### Generating Random Number
+
+FIrst we add the line `use rand::Rng;`. The `Rng` trait defines methods that random number generators implement, and this trait must be in scope for us to use those methods
+
+We call `rand::thread_rng();` that gives us the particular random number generator we're going to use, local to the current thread of execution and seeded by the operating system. Then we call `gen_range` method on the random number generator. The `gen_range` method takes a range expression as an argument and generates random number in the range
+
+### Comparing the guess to the secret number
+
+`use std::cmp::Ordering`
+
+The Ordering type is another enum and has the variants: _Less, Greater and Equal_. These are the three outcomess that are possible when you compare two values
+
+The `cmp` method compares two values and can be called on anything that can be compared. It takes a reference to whatever you want to compare with:
+
+```
+match guess.cmp(&secret_number){
+  Ordering::Less => println!("Too small!"),
+  Ordering::Greater => println!("Too big!"),
+  Ordering::Equal => println!("You win!"),
+}
+```
