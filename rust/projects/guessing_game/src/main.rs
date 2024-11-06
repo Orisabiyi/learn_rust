@@ -6,10 +6,12 @@ fn main() {
     println!("Please input your guess.");
 
     // declaring a mutable variable
-    let mut guess = String::new()
+    let mut guess = String::new();
 
-    io::stdin().read_line(&mut guess).expect("Faild to read line");
+    io::stdin()
+    .read_line(&mut guess)
+    .expect("Faild to read line");
 
-    println!("You guessed: {}", guess)
+    println!("You guessed: {}", guess.trim());
 }
     
