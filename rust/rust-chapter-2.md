@@ -51,3 +51,7 @@ Before using the rand crate in our source code, we have to include the crate in 
 [dependencies]
 rand <library name> = "0.8.5" <version number>
 ```
+
+### Upadting a Crate
+
+When we want to update a crate, Cargo provides the command _update_, which will ignore the _Cargo.lock_ file and figure out all the latest versions that fit your specifications in the Cargo.toml file and write these new versions to the Cargo.lock file
