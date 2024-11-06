@@ -1,3 +1,7 @@
+// import standard input and output
+use std::io;
+
 fn main() {
-    println!("Hello, world!");
+    println!("Guess the number!");
+    println!("Please input your guess.");
 }
